@@ -1,0 +1,4 @@
+[submodule ".makeup"]
+	path = .makeup
+	url = git@github.com:sgoings/makeup.git
+	branch = master

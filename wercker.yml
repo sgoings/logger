@@ -1,0 +1,18 @@
+box: deis/go-dev
+
+build:
+  steps:
+    - wercker/setup-go-workspace:
+        package-dir: github.com/deis/logger
+
+    - wercker/golint
+
+    - script:
+        name: glide install
+        code: |
+          glide install --cache
+
+    - script:
+        name: go build
+        code: |
+          go build ./...

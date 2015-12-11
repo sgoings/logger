@@ -1,0 +1,6 @@
+ext {
+  imageName = "deis/logger"
+  imageDir = "image"
+}
+
+apply from: "buildSrc/deis.groovy"

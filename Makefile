@@ -1,3 +1,7 @@
+# begin makeup managed
+include makeup.mk
+include $(MAKEUP_DIR)/conventions/deis/main.mk
+# end makeup managed
 SHELL = /bin/bash
 
 GO = godep go
